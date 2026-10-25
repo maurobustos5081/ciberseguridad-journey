@@ -1,6 +1,6 @@
 # 🛡️ Mi Ruta hacia la Ciberseguridad y Hacking Ético
 
-¡Hola! Soy **Mauro Bustos**, programador Junior en transición hacia la ciberseguridad. Este repositorio documenta mi proceso de aprendizaje diario, laboratorios y resúmenes técnicos, aplicando la filosofía de "aprender haciendo" y construyendo un portafolio real para la industria.
+¡Hola! Soy **Mauro**, programador Junior en transición hacia la ciberseguridad. Este repositorio documenta mi proceso de aprendizaje diario, laboratorios y resúmenes técnicos, aplicando la filosofía de "aprender haciendo" y construyendo un portafolio real para la industria.
 
 ---
 
@@ -28,19 +28,20 @@ Mi ruta se divide en etapas estructuradas (siguiendo bases sólidas de redes, si
 
 #### 🔄 Módulo Actual
 * 🎯 **Módulo 3:** Recopilación de información y análisis de vulnerabilidades.
-  * 📍 *Sección en estudio:* **3.2.4 Tipos de enumeración**
+  * ✅ *Sección 3.2.4:* **Tipos de enumeración**
+  * ✅ *Sección 3.2.5:* **Práctica - Exploración de la enumeración a través de la elaboración de paquetes con Scapy**
 
-##### 🔹 Apuntes clave de la sección (3.2.4 Tipos de enumeración):
+##### 🔹 Apuntes clave del Módulo 3 (Enumeración y Elaboración de Paquetes):
 * **Fecha de estudio:** Octubre de 2026
-* **Concepto clave:** La enumeración es una fase crítica del reconocimiento activo donde se extraen nombres de usuario, recursos compartidos, nombres de grupos y servicios de un sistema o red objetivo. A diferencia del escaneo de puertos (que busca qué hay abierto), la enumeración profundiza en *qué hay dentro* de esos servicios.
+* **Concepto clave:** La enumeración es una fase crítica del reconocimiento activo donde se extraen nombres de usuario, recursos compartidos, nombres de grupos y servicios de un sistema o red objetivo.
 * **Puntos clave aprendidos:**
   * Diferencia entre **Reconocimiento Pasivo** (recolectar info pública sin interactuar directamente con el target) y **Enumeración Activa** (interacción directa con los servicios).
-  * Importancia de identificar banners de servicios y versiones para detectar vulnerabilidades conocidas.
-  * Cómo los atacantes buscan cuentas predeterminadas o mal configuradas para escalar privilegios.
-* **Reflexión desde el desarrollo:** Como programador, entiendo que muchos de estos vectores de ataque ocurren por una mala sanitización de datos o por dejar credenciales hardcodeadas en archivos de configuración expuestos. La seguridad se construye desde el código fuente.
+  * Identificación de banners de servicios y versiones para detectar vulnerabilidades conocidas.
+  * **Uso de Scapy (Python):** Análisis y creación de paquetes personalizados a bajo nivel para manipular cabeceras (IP, TCP/UDP) y explorar cómo responden los servicios ante diferentes flags (SYN, ACK, FIN, etc.) durante el proceso de enumeración y escaneo.
+* **Reflexión desde el desarrollo:** Como programador Python, usar bibliotecas como Scapy permite entender el tráfico de red byte por byte. Esto facilita no solo automatizar escaneos a medida, sino también comprender la lógica detrás de herramientas avanzadas como Nmap.
 
 ---
 
 ## 🚀 Próximos Pasos
-* Finalizar el Módulo 3 y avanzar en el análisis de vulnerabilidades.
+* Continuar con los siguientes temas del Módulo 3 (Análisis de vulnerabilidades).
 * Comenzar con los laboratorios prácticos de Linux en TryHackMe.
