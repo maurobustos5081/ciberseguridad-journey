@@ -30,18 +30,19 @@ Mi ruta se divide en etapas estructuradas (siguiendo bases sólidas de redes, si
 * 🎯 **Módulo 3:** Recopilación de información y análisis de vulnerabilidades.
   * ✅ *Sección 3.2.4:* **Tipos de enumeración**
   * ✅ *Sección 3.2.5:* **Práctica - Exploración de la enumeración a través de la elaboración de paquetes con Scapy**
+  * ✅ *Sección 3.2.6:* **Práctica de laboratorio - Enumeración con Nmap**
 
-##### 🔹 Apuntes clave del Módulo 3 (Enumeración y Elaboración de Paquetes):
+##### 🔹 Apuntes clave del Módulo 3 (Enumeración y Nmap):
 * **Fecha de estudio:** Octubre de 2026
-* **Concepto clave:** La enumeración es una fase crítica del reconocimiento activo donde se extraen nombres de usuario, recursos compartidos, nombres de grupos y servicios de un sistema o red objetivo.
+* **Concepto clave:** Nmap (*Network Mapper*) es la herramienta estándar de la industria para el descubrimiento de hosts y el análisis de puertos y servicios. Permite pasar de la teoría de la enumeración a la ejecución real de escaneos sobre objetivos.
 * **Puntos clave aprendidos:**
-  * Diferencia entre **Reconocimiento Pasivo** (recolectar info pública sin interactuar directamente con el target) y **Enumeración Activa** (interacción directa con los servicios).
-  * Identificación de banners de servicios y versiones para detectar vulnerabilidades conocidas.
-  * **Uso de Scapy (Python):** Análisis y creación de paquetes personalizados a bajo nivel para manipular cabeceras (IP, TCP/UDP) y explorar cómo responden los servicios ante diferentes flags (SYN, ACK, FIN, etc.) durante el proceso de enumeración y escaneo.
-* **Reflexión desde el desarrollo:** Como programador Python, usar bibliotecas como Scapy permite entender el tráfico de red byte por byte. Esto facilita no solo automatizar escaneos a medida, sino también comprender la lógica detrás de herramientas avanzadas como Nmap.
+  * Uso de diferentes tipos de escaneo (como TCP SYN Scan `-sS`, escaneo de versiones `-sV` y detección de sistemas operativos `-O`).
+  * Interpretación de los estados de los puertos: `open` (abierto), `closed` (cerrado), `filtered` (filtrado por un firewall/ACL).
+  * Cómo optimizar los tiempos de escaneo y controlar el nivel de ruido en la red mediante flags de velocidad y timing (`-T4`, etc.).
+* **Reflexión desde el desarrollo:** Entender cómo Nmap interactúa con los sockets y las capas de red refuerza lo que vimos anteriormente con Scapy. Como programador, analizar el comportamiento de los puertos y servicios ayuda a diseñar aplicaciones más seguras y conscientes de su exposición en la red.
 
 ---
 
 ## 🚀 Próximos Pasos
-* Continuar con los siguientes temas del Módulo 3 (Análisis de vulnerabilidades).
-* Comenzar con los laboratorios prácticos de Linux en TryHackMe.
+* Avanzar con las siguientes secciones del Módulo 3 (Análisis de vulnerabilidades).
+* Continuar documentando cada práctica para consolidar el portafolio.
