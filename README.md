@@ -34,10 +34,11 @@ Mi ruta se divide en etapas estructuradas (siguiendo bases sólidas de redes, si
   * ✅ *Sección 3.2.7:* **Inspección y escucha de paquetes**
   * ✅ *Sección 3.2.8:* **Práctica - Inspección de paquetes y escuchas**
   * ✅ *Sección 3.2.9:* **Práctica de laboratorio - Elaboración de paquetes con Scapy**
+  * ✅ *Sección 3.2.10:* **Práctica de laboratorio - Rastreo de redes con Wireshark**
 
 ##### 🔹 Apuntes clave del Módulo 3 (Enumeración, Scapy y Wireshark):
 * **Fecha de estudio:** Octubre de 2026
-* **Concepto clave:** Comprensión profunda de la capa de red e inspección de tráfico en tiempo real mediante *packet sniffing* y construcción de paquetes personalizados (*packet crafting*).
+* **Concepto clave:** Comprensión profunda de la capa de red e inspección de tráfico en tiempo real mediante *packet sniffing*, construcción de paquetes personalizados (*packet crafting*) y análisis detallado de capturas con Wireshark.
 * **Puntos clave aprendidos:**
   * **Nmap:** Escaneo activo, tipos de escaneo (`-sS`, `-sV`, `-O`), control de timing (`-T4`) e interpretación de estados de puertos (`open`, `closed`, `filtered`).
   * **Inspección y Escucha (3.2.7 & 3.2.8):** Uso de capturadores de tráfico en interfaces de red específicas. Exportación y análisis de archivos PCAP (`capture1.pcap`) en **Wireshark** para inspeccionar cabeceras Ethernet, IP y TCP/UDP.
@@ -45,7 +46,10 @@ Mi ruta se divide en etapas estructuradas (siguiendo bases sólidas de redes, si
     * Uso de la librería interactiva de Python (`sudo scapy`) para forjar capas de red apiladas (`IP() / TCP()`).
     * Captura controlada con `sniff()` asignando interfaces, `count` y `timeout` para evitar bloqueo de sockets.
     * Gestión de permisos e interrupciones del kernel a nivel de consola (`sudo` obligatorio para manipular *raw sockets*).
-* **Reflexión desde el desarrollo:** Entender cómo se estructuran manualmente los campos de un paquete de red (como flags SYN, ACK o puertos de destino) permite comprender mejor los análisis de firma en Firewalls/IDS y refuerza la lógica de programación al manipular sockets.
+  * **Rastreo de Redes con Wireshark (3.2.10):**
+    * Análisis detallado de flujos de conversación (TCP Follow Stream) para inspeccionar datos en texto plano e identificar protocolos vulnerables.
+    * Aplicación de filtros de visualización avanzados (`ip.addr`, `tcp.flags.syn == 1`, `http`, `dns`) para aislar eventos de red específicos durante un análisis forense o de tráfico.
+* **Reflexión desde el desarrollo:** Entender la estructura interna de las tramas y paquetes permite visualizar cómo se comporta la red frente a diferentes herramientas de auditoría. Dominar filtros en Wireshark agiliza enormemente el diagnóstico de fallas y la detección de anomalías o escaneos sospechosos.
 
 ---
 
