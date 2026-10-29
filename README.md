@@ -31,18 +31,24 @@ Mi ruta se divide en etapas estructuradas (siguiendo bases sólidas de redes, si
   * ✅ *Sección 3.2.4:* **Tipos de enumeración**
   * ✅ *Sección 3.2.5:* **Práctica - Exploración de la enumeración a través de la elaboración de paquetes con Scapy**
   * ✅ *Sección 3.2.6:* **Práctica de laboratorio - Enumeración con Nmap**
+  * ✅ *Sección 3.2.7:* **Inspección y escucha de paquetes**
+  * ✅ *Sección 3.2.8:* **Práctica - Inspección de paquetes y escuchas**
+  * ✅ *Sección 3.2.9:* **Práctica de laboratorio - Elaboración de paquetes con Scapy**
 
-##### 🔹 Apuntes clave del Módulo 3 (Enumeración y Nmap):
+##### 🔹 Apuntes clave del Módulo 3 (Enumeración, Scapy y Wireshark):
 * **Fecha de estudio:** Octubre de 2026
-* **Concepto clave:** Nmap (*Network Mapper*) es la herramienta estándar de la industria para el descubrimiento de hosts y el análisis de puertos y servicios. Permite pasar de la teoría de la enumeración a la ejecución real de escaneos sobre objetivos.
+* **Concepto clave:** Comprensión profunda de la capa de red e inspección de tráfico en tiempo real mediante *packet sniffing* y construcción de paquetes personalizados (*packet crafting*).
 * **Puntos clave aprendidos:**
-  * Uso de diferentes tipos de escaneo (como TCP SYN Scan `-sS`, escaneo de versiones `-sV` y detección de sistemas operativos `-O`).
-  * Interpretación de los estados de los puertos: `open` (abierto), `closed` (cerrado), `filtered` (filtrado por un firewall/ACL).
-  * Cómo optimizar los tiempos de escaneo y controlar el nivel de ruido en la red mediante flags de velocidad y timing (`-T4`, etc.).
-* **Reflexión desde el desarrollo:** Entender cómo Nmap interactúa con los sockets y las capas de red refuerza lo que vimos anteriormente con Scapy. Como programador, analizar el comportamiento de los puertos y servicios ayuda a diseñar aplicaciones más seguras y conscientes de su exposición en la red.
+  * **Nmap:** Escaneo activo, tipos de escaneo (`-sS`, `-sV`, `-O`), control de timing (`-T4`) e interpretación de estados de puertos (`open`, `closed`, `filtered`).
+  * **Inspección y Escucha (3.2.7 & 3.2.8):** Uso de capturadores de tráfico en interfaces de red específicas. Exportación y análisis de archivos PCAP (`capture1.pcap`) en **Wireshark** para inspeccionar cabeceras Ethernet, IP y TCP/UDP.
+  * **Elaboración de paquetes con Scapy (3.2.9):**
+    * Uso de la librería interactiva de Python (`sudo scapy`) para forjar capas de red apiladas (`IP() / TCP()`).
+    * Captura controlada con `sniff()` asignando interfaces, `count` y `timeout` para evitar bloqueo de sockets.
+    * Gestión de permisos e interrupciones del kernel a nivel de consola (`sudo` obligatorio para manipular *raw sockets*).
+* **Reflexión desde el desarrollo:** Entender cómo se estructuran manualmente los campos de un paquete de red (como flags SYN, ACK o puertos de destino) permite comprender mejor los análisis de firma en Firewalls/IDS y refuerza la lógica de programación al manipular sockets.
 
 ---
 
 ## 🚀 Próximos Pasos
-* Avanzar con las siguientes secciones del Módulo 3 (Análisis de vulnerabilidades).
-* Continuar documentando cada práctica para consolidar el portafolio.
+* Continuar con las siguientes secciones del Módulo 3 (Análisis de vulnerabilidades y herramientas de evaluación).
+* Mantener actualizada la bitácora técnica en GitHub.
