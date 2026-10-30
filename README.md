@@ -35,24 +35,26 @@ Mi ruta se divide en etapas estructuradas (siguiendo bases sólidas de redes, si
   * ✅ *Sección 3.2.8:* **Práctica - Inspección de paquetes y escuchas**
   * ✅ *Sección 3.2.9:* **Práctica de laboratorio - Elaboración de paquetes con Scapy**
   * ✅ *Sección 3.2.10:* **Práctica de laboratorio - Rastreo de redes con Wireshark**
+  * ✅ *Sección 3.3.1:* **Descripción General (Análisis de vulnerabilidades)**
+  * ✅ *Sección 3.3.2:* **Cómo funciona un típico escáner de vulnerabilidades automatizado**
+  * ✅ *Sección 3.3.3:* **Práctica - Cómo funciona un escáner de vulnerabilidades automatizado típico**
+  * ✅ *Sección 3.3.4:* **Tipos de análisis de vulnerabilidades**
 
-##### 🔹 Apuntes clave del Módulo 3 (Enumeración, Scapy y Wireshark):
+##### 🔹 Apuntes clave del Módulo 3 (Enumeración, Escaneo y Análisis de Vulnerabilidades):
 * **Fecha de estudio:** Octubre de 2026
-* **Concepto clave:** Comprensión profunda de la capa de red e inspección de tráfico en tiempo real mediante *packet sniffing*, construcción de paquetes personalizados (*packet crafting*) y análisis detallado de capturas con Wireshark.
+* **Concepto clave:** Transición desde la fase de reconocimiento/enumeración hacia la identificación sistemática de fallas de seguridad mediante escáneres automatizados y metodologías de análisis.
 * **Puntos clave aprendidos:**
-  * **Nmap:** Escaneo activo, tipos de escaneo (`-sS`, `-sV`, `-O`), control de timing (`-T4`) e interpretación de estados de puertos (`open`, `closed`, `filtered`).
-  * **Inspección y Escucha (3.2.7 & 3.2.8):** Uso de capturadores de tráfico en interfaces de red específicas. Exportación y análisis de archivos PCAP (`capture1.pcap`) en **Wireshark** para inspeccionar cabeceras Ethernet, IP y TCP/UDP.
-  * **Elaboración de paquetes con Scapy (3.2.9):**
-    * Uso de la librería interactiva de Python (`sudo scapy`) para forjar capas de red apiladas (`IP() / TCP()`).
-    * Captura controlada con `sniff()` asignando interfaces, `count` y `timeout` para evitar bloqueo de sockets.
-    * Gestión de permisos e interrupciones del kernel a nivel de consola (`sudo` obligatorio para manipular *raw sockets*).
-  * **Rastreo de Redes con Wireshark (3.2.10):**
-    * Análisis detallado de flujos de conversación (TCP Follow Stream) para inspeccionar datos en texto plano e identificar protocolos vulnerables.
-    * Aplicación de filtros de visualización avanzados (`ip.addr`, `tcp.flags.syn == 1`, `http`, `dns`) para aislar eventos de red específicos durante un análisis forense o de tráfico.
-* **Reflexión desde el desarrollo:** Entender la estructura interna de las tramas y paquetes permite visualizar cómo se comporta la red frente a diferentes herramientas de auditoría. Dominar filtros en Wireshark agiliza enormemente el diagnóstico de fallas y la detección de anomalías o escaneos sospechosos.
+  * **Redes y Scapy/Wireshark (Previo):** Construcción de paquetes, control de interfaces, análisis de flujos TCP y filtrado de tráfico forense.
+  * **Fundamentos de Escaneo de Vulnerabilidades (3.3.1 - 3.3.3):**
+    * Arquitectura y funcionamiento interno de los escáneres automatizados (bases de datos de vulnerabilidades, motores de sondeo, comparación de firmas/versiones de software).
+    * Fases del proceso: descubrimiento de activos, identificación de puertos/servicios, cotejo de bases de datos de CVEs y generación de reportes de riesgo.
+  * **Tipos de Análisis de Vulnerabilidades (3.3.4):**
+    * Distinción entre escaneos **autenticados (credenciales)** frente a **no autenticados (externos)**.
+    * Evaluación de vulnerabilidades a nivel de red, aplicaciones web, bases de datos e infraestructura cloud.
+* **Reflexión desde el desarrollo:** Comprender cómo operan los escáneres automatizados ayuda a entender el valor de mantener dependencias actualizadas, aplicar parches de seguridad a tiempo y estructurar software defensivo minimizando la superficie de ataque expuesta.
 
 ---
 
 ## 🚀 Próximos Pasos
-* Continuar con las siguientes secciones del Módulo 3 (Análisis de vulnerabilidades y herramientas de evaluación).
+* Continuar con las siguientes secciones del Módulo 3.
 * Mantener actualizada la bitácora técnica en GitHub.
