@@ -39,22 +39,27 @@ Mi ruta se divide en etapas estructuradas (siguiendo bases sólidas de redes, si
   * ✅ *Sección 3.3.2:* **Cómo funciona un típico escáner de vulnerabilidades automatizado**
   * ✅ *Sección 3.3.3:* **Práctica - Cómo funciona un escáner de vulnerabilidades automatizado típico**
   * ✅ *Sección 3.3.4:* **Tipos de análisis de vulnerabilidades**
+  * ✅ *Sección 3.3.5:* **Práctica - Tipos de análisis de vulnerabilidades**
+  * ✅ *Sección 3.3.6:* **Práctica de laboratorio - Análisis de vulnerabilidades con Kali Tools**
+  * ✅ *Sección 3.3.7:* **Desafíos a tener en cuenta al ejecutar un análisis de vulnerabilidades**
 
-##### 🔹 Apuntes clave del Módulo 3 (Enumeración, Escaneo y Análisis de Vulnerabilidades):
+##### 🔹 Apuntes clave del Módulo 3 (Análisis de Vulnerabilidades y Herramientas de Kali):
 * **Fecha de estudio:** Octubre de 2026
-* **Concepto clave:** Transición desde la fase de reconocimiento/enumeración hacia la identificación sistemática de fallas de seguridad mediante escáneres automatizados y metodologías de análisis.
+* **Concepto clave:** Ejecución práctica de análisis de vulnerabilidades mediante herramientas especializadas en Kali Linux, priorización de hallazgos y gestión de los límites y desafíos técnicos de los escaneos automatizados.
 * **Puntos clave aprendidos:**
-  * **Redes y Scapy/Wireshark (Previo):** Construcción de paquetes, control de interfaces, análisis de flujos TCP y filtrado de tráfico forense.
-  * **Fundamentos de Escaneo de Vulnerabilidades (3.3.1 - 3.3.3):**
-    * Arquitectura y funcionamiento interno de los escáneres automatizados (bases de datos de vulnerabilidades, motores de sondeo, comparación de firmas/versiones de software).
-    * Fases del proceso: descubrimiento de activos, identificación de puertos/servicios, cotejo de bases de datos de CVEs y generación de reportes de riesgo.
-  * **Tipos de Análisis de Vulnerabilidades (3.3.4):**
-    * Distinción entre escaneos **autenticados (credenciales)** frente a **no autenticados (externos)**.
-    * Evaluación de vulnerabilidades a nivel de red, aplicaciones web, bases de datos e infraestructura cloud.
-* **Reflexión desde el desarrollo:** Comprender cómo operan los escáneres automatizados ayuda a entender el valor de mantener dependencias actualizadas, aplicar parches de seguridad a tiempo y estructurar software defensivo minimizando la superficie de ataque expuesta.
+  * **Práctica de Tipos de Escaneo (3.3.5):** Diferenciación práctica entre evaluaciones internas/autenticadas (que revelan parches faltantes o malas configuraciones locales) y externas/sin credenciales (que muestran la superficie de ataque expuesta a internet).
+  * **Análisis de Vulnerabilidades con Kali Tools (3.3.6):**
+    * Uso práctico de scripts NSE (`Nmap Scripting Engine`) enfocado en detección de vulnerabilidades (`--script vuln`).
+    * Análisis de configuraciones web y servicios expuestos utilizando herramientas de evaluación de Kali (como OpenVAS/GVM o Nikto para servidores web).
+    * Interpretación de salidas, correlación de banners y verificación de falsos positivos.
+  * **Desafíos en el Escaneo de Vulnerabilidades (3.3.7):**
+    * **Impacto en el rendimiento:** Consumo de ancho de banda y carga de CPU/Memoria en los sistemas auditados durante sondeos intensivos.
+    * **Falsos Positivos vs. Falsos Negativos:** La necesidad imperiosa de validar manualmente los hallazgos antes de generar reportes finales.
+    * **Limitaciones del escaneo automatizado:** Un escáner identifica firmas conocidas (CVEs), pero no reemplaza el análisis humano ante fallas de lógica de negocio o cadenas de explotación complejas.
+* **Reflexión desde el desarrollo:** Como desarrollador, entiendo que las herramientas automatizadas son una excelente primera línea de defensa para auditar software, pero la validación manual y el entendimiento del contexto de la aplicación son esenciales para evitar ruido en los reportes y solucionar brechas reales de seguridad.
 
 ---
 
 ## 🚀 Próximos Pasos
-* Continuar con las siguientes secciones del Módulo 3.
-* Mantener actualizada la bitácora técnica en GitHub.
+* Finalizar los desafíos/evaluación restantes del Módulo 3 o avanzar al Módulo 4.
+* Continuar documentando prácticas de laboratorio y scripts en GitHub.
