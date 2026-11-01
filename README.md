@@ -2,11 +2,10 @@
 
 ¡Hola! Soy **Mauro**, programador Junior en transición hacia la ciberseguridad. Este repositorio documenta mi proceso de aprendizaje diario, laboratorios y resúmenes técnicos, aplicando la filosofía de "aprender haciendo" y construyendo un portafolio real para la industria.
 
----
-
 ## 📚 Estructura de Aprendizaje
 
 Mi ruta se divide en etapas estructuradas (siguiendo bases sólidas de redes, sistemas y aplicaciones):
+
 1. **Redes y Fundamentos (Cisco Networking Academy)** 📍 *(En curso)*
 2. **Linux y Práctica en Servidores (TryHackMe / OverTheWire)**
 3. **Hacking Web (PortSwigger Web Security Academy)**
@@ -23,10 +22,9 @@ Mi ruta se divide en etapas estructuradas (siguiendo bases sólidas de redes, si
 * ✅ **Introducción al curso**
 * ✅ **Módulo 1:** Introducción a la piratería ética y las pruebas de penetración.
 * ✅ **Módulo 2:** Planificación y alcance de una evaluación de prueba de penetración.
+* ✅ **Módulo 3:** Recopilación de información y análisis de vulnerabilidades.
 
----
-
-#### 🔄 Módulo Actual
+#### 🔄 Detalle del Módulo Completado: Módulo 3
 * 🎯 **Módulo 3:** Recopilación de información y análisis de vulnerabilidades.
   * ✅ *Sección 3.2.4:* **Tipos de enumeración**
   * ✅ *Sección 3.2.5:* **Práctica - Exploración de la enumeración a través de la elaboración de paquetes con Scapy**
@@ -42,24 +40,25 @@ Mi ruta se divide en etapas estructuradas (siguiendo bases sólidas de redes, si
   * ✅ *Sección 3.3.5:* **Práctica - Tipos de análisis de vulnerabilidades**
   * ✅ *Sección 3.3.6:* **Práctica de laboratorio - Análisis de vulnerabilidades con Kali Tools**
   * ✅ *Sección 3.3.7:* **Desafíos a tener en cuenta al ejecutar un análisis de vulnerabilidades**
+  * ✅ *Sección 3.4.1:* **Descripción general (Análisis de resultados)**
+  * ✅ *Sección 3.4.2:* **Fuentes para una mayor investigación de vulnerabilidades**
+  * ✅ *Sección 3.4.3:* **Práctica de laboratorio - Investigación de fuentes de información de vulnerabilidades**
+  * ✅ *Sección 3.4.4:* **Cómo lidiar con una vulnerabilidad**
+  * ✅ *Sección 3.5.1:* **¿Qué aprendí en este módulo?**
+  * ✅ *Sección 3.5.2:* **Preguntas de reflexión**
+  * ✅ *Sección 3.5.3:* **Cuestionario - Recopilación de información y análisis de vulnerabilidades**
 
-##### 🔹 Apuntes clave del Módulo 3 (Análisis de Vulnerabilidades y Herramientas de Kali):
-* **Fecha de estudio:** Octubre de 2026
-* **Concepto clave:** Ejecución práctica de análisis de vulnerabilidades mediante herramientas especializadas en Kali Linux, priorización de hallazgos y gestión de los límites y desafíos técnicos de los escaneos automatizados.
-* **Puntos clave aprendidos:**
-  * **Práctica de Tipos de Escaneo (3.3.5):** Diferenciación práctica entre evaluaciones internas/autenticadas (que revelan parches faltantes o malas configuraciones locales) y externas/sin credenciales (que muestran la superficie de ataque expuesta a internet).
-  * **Análisis de Vulnerabilidades con Kali Tools (3.3.6):**
-    * Uso práctico de scripts NSE (`Nmap Scripting Engine`) enfocado en detección de vulnerabilidades (`--script vuln`).
-    * Análisis de configuraciones web y servicios expuestos utilizando herramientas de evaluación de Kali (como OpenVAS/GVM o Nikto para servidores web).
-    * Interpretación de salidas, correlación de banners y verificación de falsos positivos.
-  * **Desafíos en el Escaneo de Vulnerabilidades (3.3.7):**
-    * **Impacto en el rendimiento:** Consumo de ancho de banda y carga de CPU/Memoria en los sistemas auditados durante sondeos intensivos.
-    * **Falsos Positivos vs. Falsos Negativos:** La necesidad imperiosa de validar manualmente los hallazgos antes de generar reportes finales.
-    * **Limitaciones del escaneo automatizado:** Un escáner identifica firmas conocidas (CVEs), pero no reemplaza el análisis humano ante fallas de lógica de negocio o cadenas de explotación complejas.
-* **Reflexión desde el desarrollo:** Como desarrollador, entiendo que las herramientas automatizadas son una excelente primera línea de defensa para auditar software, pero la validación manual y el entendimiento del contexto de la aplicación son esenciales para evitar ruido en los reportes y solucionar brechas reales de seguridad.
+##### 🔹 Apuntes clave del Módulo 3:
+* **Concepto clave:** Diferencia entre reconocimiento activo y pasivo, análisis crítico de reportes de vulnerabilidades, y corroboración mediante bases de conocimiento públicas (CVE/NVD).
+* **Herramientas utilizadas:** Scapy, Wireshark, Nmap, Recon-ng, Whois, ExifTool.
+* **Técnicas aprendidas:**
+  * Distinción entre escaneos autenticados (perspectiva interna/root) y no autenticados (perspectiva externa/black-box).
+  * Crafting de paquetes y evasión básica con escaneos TCP FIN (`-sF`) y escaneos UDP (`-sU`).
+  * Gestión de hallazgos: mitigación, remediación, aceptación de riesgos y controles compensatorios.
 
 ---
 
 ## 🚀 Próximos Pasos
-* Finalizar los desafíos/evaluación restantes del Módulo 3 o avanzar al Módulo 4.
-* Continuar documentando prácticas de laboratorio y scripts en GitHub.
+
+* ➡️ **Iniciar Módulo 4:** Explotación de Redes y Sistemas.
+* Continuar ampliando los scripts propios e integrando laboratorios prácticos en la estructura del portafolio.
