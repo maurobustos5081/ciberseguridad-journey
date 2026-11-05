@@ -78,6 +78,20 @@ Mi ruta se divide en etapas estructuradas (siguiendo bases sólidas de redes, si
 
   * ✅ 4.3.6 Práctica - Ataques físicos
 
+* ✅ *Sección 4.4:* **Herramientas de ingeniería social**
+
+  * ✅ 4.4.1 Descripción general
+
+  * ✅ 4.4.2 Kit de herramientas para ingenieros sociales (SET - Social-Engineer Toolkit)
+
+  * ✅ 4.4.3 Marco de explotación del navegador (BeEF - Browser Exploitation Framework)
+
+  * ✅ 4.4.4 Práctica - Marco de explotación del navegador
+
+  * ✅ 4.4.5 Herramientas de suplantación de identidad de llamadas (Caller ID Spoofing Tools)
+
+  * ✅ 4.4.6 Práctica - Herramientas de suplantación de identidad de llamadas
+
 ##### 🔹 Apuntes clave del Módulo 4:
 
 * **Ingeniería Social:** Explotación del factor humano mediante manipulación psicológica, pretexto (Phishing, Vishing, Smishing, Baiting) y pivoteo en la red.
@@ -86,11 +100,19 @@ Mi ruta se divide en etapas estructuradas (siguiendo bases sólidas de redes, si
 
   * **Tailgating / Piggybacking:** Acceso no autorizado siguiendo de cerca a personal legítimo en áreas restringidas.
 
-  * **Dumpster Diving:** Recuperación de información sensible (contraseñas impresas, diagramas de red, tokens) en desechos no triturados.
+  * **Dumpster Diving:** Recuperación de información sensible en desechos no triturados.
 
-  * **Shoulder Surfing:** Observación directa de credenciales o pines mediante visibilidad directa o cámaras.
+  * **Shoulder Surfing:** Observación directa de credenciales o pines.
 
-  * **Clonación de Credenciales:** Abuso de frecuencias RFID/NFC para duplicar tarjetas de acceso físico mediante dispositivos escáner/clonadores.
+  * **Clonación de Credenciales:** Abuso de frecuencias RFID/NFC para duplicar tarjetas de acceso.
+
+* **Herramientas Específicas de Ingeniería Social:**
+
+  * **SET (Social-Engineer Toolkit):** Framework de código abierto orientado al desarrollo de ataques automatizados de ingeniería social (clonación de sitios web para Phishing, generación de payloads maliciosos, vectores de infección por USB/Email).
+
+  * **BeEF (Browser Exploitation Framework):** Herramienta de pruebas de penetración enfocada en explotar vulnerabilidades del lado del cliente enganchando (*hooking*) navegadores web objetivo para ejecutar comandos, phishing en tiempo real y exploración de red interna.
+
+  * **Caller ID Spoofing:** Técnicas y software para falsificar el número de origen en llamadas de voz (Vishing), manipulando la confianza del objetivo.
 
 #### 📂 Módulos Anteriores Completados
 
@@ -140,6 +162,6 @@ Mi ruta se divide en etapas estructuradas (siguiendo bases sólidas de redes, si
 
 ## 🚀 Próximos Pasos
 
-* ➡️ **Continuar Módulo 4:** Avanzar con las secciones restantes de ataques técnicos a redes y sistemas.
+* ➡️ **Finalizar Módulo 4:** Completar las secciones finales de mitigación/cierre y rendir el cuestionario del módulo.
 
-* Subir laboratorios prácticos al repositorio en sus respectivas carpetas.
+* Subir laboratorios prácticos realizados en Kali Linux al repositorio.
