@@ -22,31 +22,31 @@ Mi ruta se divide en etapas estructuradas (siguiendo bases sólidas de redes, si
 
 #### 📌 Módulos Completados
 
-* ✅ **Introducción al curso**
+- ✅ **Introducción al curso**
 
-* ✅ **Módulo 1:** Introducción a la piratería ética y las pruebas de penetración.
+- ✅ **Módulo 1:** Introducción a la piratería ética y las pruebas de penetración.
 
-* ✅ **Módulo 2:** Planificación y alcance de una evaluación de prueba de penetración.
+- ✅ **Módulo 2:** Planificación y alcance de una evaluación de prueba de penetración.
 
-* ✅ **Módulo 3:** Recopilación de información y análisis de vulnerabilidades.
+- ✅ **Módulo 3:** Recopilación de información y análisis de vulnerabilidades.
 
-* 🔄 **Módulo 4:** Ataques a redes y sistemas *(En curso)*
+- 🔄 **Módulo 4:** Ataques a redes y sistemas *(En curso)*
 
 #### 🎯 Módulo 4: Ataques a redes y sistemas
 
-* ✅ *Sección 4.0:* **Introducción**
+- ✅ *Sección 4.0:* **Introducción**
 
   * ✅ 4.0.1 ¿Por qué debería tomar este módulo?
 
   * ✅ 4.0.2 ¿Qué Aprenderé en este Módulo?
 
-* ✅ *Sección 4.1:* **Pretextos para un acercamiento y suplantación de identidad**
+- ✅ *Sección 4.1:* **Pretextos para un acercamiento y suplantación de identidad**
 
   * ✅ 4.1.1 Descripción General
 
   * ✅ 4.1.2 Práctica - Pretextos y suplantación
 
-* ✅ *Sección 4.2:* **Ataques de ingeniería social**
+- ✅ *Sección 4.2:* **Ataques de ingeniería social**
 
   * ✅ 4.2.1 Descripción General
 
@@ -64,7 +64,7 @@ Mi ruta se divide en etapas estructuradas (siguiendo bases sólidas de redes, si
 
   * ✅ 4.2.8 Práctica - Ataques de ingeniería social
 
-* ✅ *Sección 4.3:* **Ataques físicos**
+- ✅ *Sección 4.3:* **Ataques físicos**
 
   * ✅ 4.3.1 Descripción General
 
@@ -78,7 +78,7 @@ Mi ruta se divide en etapas estructuradas (siguiendo bases sólidas de redes, si
 
   * ✅ 4.3.6 Práctica - Ataques físicos
 
-* ✅ *Sección 4.4:* **Herramientas de ingeniería social**
+- ✅ *Sección 4.4:* **Herramientas de ingeniería social**
 
   * ✅ 4.4.1 Descripción general
 
@@ -92,11 +92,15 @@ Mi ruta se divide en etapas estructuradas (siguiendo bases sólidas de redes, si
 
   * ✅ 4.4.6 Práctica - Herramientas de suplantación de identidad de llamadas
 
+  * ✅ 4.4.7 Práctica de laboratorio - Exploración del kit de herramientas del ingeniero social (SET)
+
+  * ✅ 4.4.8 Práctica de laboratorio - Uso del marco de explotación del navegador (BeEF)
+
 ##### 🔹 Apuntes clave del Módulo 4:
 
-* **Ingeniería Social:** Explotación del factor humano mediante manipulación psicológica, pretexto (Phishing, Vishing, Smishing, Baiting) y pivoteo en la red.
+- **Ingeniería Social:** Explotación del factor humano mediante manipulación psicológica, pretexto (Phishing, Vishing, Smishing, Baiting) y pivoteo en la red.
 
-* **Seguridad Física y Vector Presencial:**
+- **Seguridad Física y Vector Presencial:**
 
   * **Tailgating / Piggybacking:** Acceso no autorizado siguiendo de cerca a personal legítimo en áreas restringidas.
 
@@ -106,7 +110,7 @@ Mi ruta se divide en etapas estructuradas (siguiendo bases sólidas de redes, si
 
   * **Clonación de Credenciales:** Abuso de frecuencias RFID/NFC para duplicar tarjetas de acceso.
 
-* **Herramientas Específicas de Ingeniería Social:**
+- **Herramientas Específicas de Ingeniería Social:**
 
   * **SET (Social-Engineer Toolkit):** Framework de código abierto orientado al desarrollo de ataques automatizados de ingeniería social (clonación de sitios web para Phishing, generación de payloads maliciosos, vectores de infección por USB/Email).
 
@@ -116,7 +120,7 @@ Mi ruta se divide en etapas estructuradas (siguiendo bases sólidas de redes, si
 
 #### 📂 Módulos Anteriores Completados
 
-* 🎯 **Módulo 3:** Recopilación de información y análisis de vulnerabilidades.
+- 🎯 **Módulo 3:** Recopilación de información y análisis de vulnerabilidades.
 
   * ✅ *Sección 3.2.4:* Tipos de enumeración
 
@@ -162,6 +166,6 @@ Mi ruta se divide en etapas estructuradas (siguiendo bases sólidas de redes, si
 
 ## 🚀 Próximos Pasos
 
-* ➡️ **Finalizar Módulo 4:** Completar las secciones finales de mitigación/cierre y rendir el cuestionario del módulo.
+- ➡️ **Finalizar Módulo 4:** Completar las secciones finales de mitigación/cierre y rendir el cuestionario del módulo.
 
-* Subir laboratorios prácticos realizados en Kali Linux al repositorio.
+- Subir laboratorios prácticos realizados en Kali Linux al repositorio.
