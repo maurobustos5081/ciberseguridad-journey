@@ -30,113 +30,131 @@ Mi ruta se divide en etapas estructuradas (siguiendo bases sólidas de redes, si
 
 * ✅ **Módulo 3:** Recopilación de información y análisis de vulnerabilidades.
 
-* ✅ **Módulo 4:** Ataques de ingeniería social *(Completado)*
+* ✅ **Módulo 4:** Ataques de ingeniería social.
 
 * 🔄 **Módulo 5:** Explotación de redes cableadas e inalámbricas *(En curso)*
 
-#### 🎯 Módulo 4: Ataques de ingeniería social
+#### 🎯 Módulo 5: Explotación de redes cableadas e inalámbricas
 
-* ✅ *Sección 4.0:* **Introducción**
+* ✅ *Sección 5.1:* **Explotación de vulnerabilidades basadas en la red**
 
-  * ✅ 4.0.1 ¿Por qué debería tomar este módulo?
+  * ✅ 5.1.1 Descripción General
 
-  * ✅ 4.0.2 ¿Qué Aprenderé en este Módulo?
+  * ✅ 5.1.2 Resolución de nombres de Windows y ataques de SMB
 
-* ✅ *Sección 4.1:* **Pretextos para un acercamiento y suplantación de identidad**
+  * ✅ 5.1.3 Práctica - Resolución de nombres de Windows y ataques de SMB
 
-  * ✅ 4.1.1 Descripción General
+  * ✅ 5.1.4 Práctica de laboratorio - Análisis en busca de vulnerabilidades de pymes con enum4linux
 
-  * ✅ 4.1.2 Práctica - Pretextos y suplantación
+##### 🔹 Apuntes clave del Módulo 5:
 
-* ✅ *Sección 4.2:* **Ataques de ingeniería social**
-
-  * ✅ 4.2.1 Descripción General
-
-  * ✅ 4.2.2 Suplantación de identidad de correo electrónico (Phishing)
-
-  * ✅ 4.2.3 Suplantación de identidad de llamadas telefónicas (Vishing)
-
-  * ✅ 4.2.4 Suplantación de identidad del servicio de mensajes cortos (Smishing)
-
-  * ✅ 4.2.5 Abandono de USB (Baiting / Drop USB)
-
-  * ✅ 4.2.6 Ataques al bebedero (Watering Hole)
-
-  * ✅ 4.2.7 Práctica - Ataque de pivote
-
-  * ✅ 4.2.8 Práctica - Ataques de ingeniería social
-
-* ✅ *Sección 4.3:* **Ataques físicos**
-
-  * ✅ 4.3.1 Descripción General
-
-  * ✅ 4.3.2 Intrusión por seguimiento (Tailgating / Piggybacking)
-
-  * ✅ 4.3.3 Búsqueda en la basura (Dumpster Diving)
-
-  * ✅ 4.3.4 Vigilancia por encima del hombro (Shoulder Surfing)
-
-  * ✅ 4.3.5 Clonación de credenciales (Badge Cloning / RFID Skimming)
-
-  * ✅ 4.3.6 Práctica - Ataques físicos
-
-* ✅ *Sección 4.4:* **Herramientas de ingeniería social**
-
-  * ✅ 4.4.1 Descripción general
-
-  * ✅ 4.4.2 Kit de herramientas para ingenieros sociales (SET - Social-Engineer Toolkit)
-
-  * ✅ 4.4.3 Marco de explotación del navegador (BeEF - Browser Exploitation Framework)
-
-  * ✅ 4.4.4 Práctica - Marco de explotación del navegador
-
-  * ✅ 4.4.5 Herramientas de suplantación de identidad de llamadas (Caller ID Spoofing Tools)
-
-  * ✅ 4.4.6 Práctica - Herramientas de suplantación de identidad de llamadas
-
-  * ✅ 4.4.7 Práctica de laboratorio - Exploración del kit de herramientas del ingeniero social (SET)
-
-  * ✅ 4.4.8 Práctica de laboratorio - Uso del marco de explotación del navegador (BeEF)
-
-* ✅ *Sección 4.5:* **Métodos de influencia**
-
-  * ✅ 4.5.1 Descripción general
-
-  * ✅ 4.5.2 Práctica - Métodos de influencia
-
-* ✅ *Sección 4.6:* **Resumen**
-
-  * ✅ 4.6.1 ¿Qué aprendí en este módulo?
-
-  * ✅ 4.6.2 Preguntas de reflexión
-
-  * ✅ 4.6.3 Cuestionario - Ataques de ingeniería social
-
-##### 🔹 Apuntes clave del Módulo 4:
-
-* **Ingeniería Social:** Explotación del factor humano mediante manipulación psicológica, pretexto (Phishing, Vishing, Smishing, Baiting) y pivoteo en la red.
-
-* **Métodos de Influencia:** Aplicación de principios psicológicos (autoridad, urgencia, escasez, prueba social, simpatía y reciprocidad) para persuadir a la víctima y evadir controles de seguridad.
-
-* **Seguridad Física y Vector Presencial:**
-
-  * **Tailgating / Piggybacking:** Acceso no autorizado siguiendo de cerca a personal legítimo en áreas restringidas.
-
-  * **Dumpster Diving:** Recuperación de información sensible en desechos no triturados.
-
-  * **Shoulder Surfing:** Observación directa de credenciales o pines.
-
-  * **Clonación de Credenciales:** Abuso de frecuencias RFID/NFC para duplicar tarjetas de acceso.
-
-* **Herramientas Específicas de Ingeniería Social:**
-
-  * **SET (Social-Engineer Toolkit):** Framework de código abierto orientado al desarrollo de ataques automatizados de ingeniería social (clonación de sitios web para Phishing, generación de payloads maliciosos, vectores de infección por USB/Email).
-
-  * **BeEF (Browser Exploitation Framework):** Herramienta de pruebas de penetración enfocada en explotar vulnerabilidades del lado del cliente enganchando (*hooking*) navegadores web objetivo para ejecutar comandos, phishing en tiempo real y exploración de red interna.
-
-  * **Caller ID Spoofing:** Técnicas y software para falsificar el número de origen en llamadas de voz (Vishing), manipulando la confianza del objetivo.
+* **Resolución de Nombres en Windows:** Abuso de protocolos de difusión local como LLMNR (*Link-Local Multicast Name Resolution*) y NBT-NS (*NetBIOS Name Service*) mediante envenenamiento de respuestas para interceptar hashes NTLMv2 en la red interna.
+* **Ataques a SMB (Server Message Block):** Enumeración de recursos compartidos sin autenticación (*Null Sessions*), explotación de configuraciones inseguras y captura/retransmisión de credenciales (*SMB Relay*).
+* **Enumeración con `enum4linux`:** Herramienta en Kali Linux utilizada para extraer información crítica de sistemas Windows y Samba (usuarios, grupos, políticas de contraseñas, recursos compartidos y OS) a través de protocolos SMB y RPC.
 
 #### 📂 Módulos Anteriores Completados
+
+* 🎯 **Módulo 4:** Ataques de ingeniería social
+
+  * ✅ *Sección 4.0:* **Introducción**
+
+    * ✅ 4.0.1 ¿Por qué debería tomar este módulo?
+
+    * ✅ 4.0.2 ¿Qué Aprenderé en este Módulo?
+
+  * ✅ *Sección 4.1:* **Pretextos para un acercamiento y suplantación de identidad**
+
+    * ✅ 4.1.1 Descripción General
+
+    * ✅ 4.1.2 Práctica - Pretextos y suplantación
+
+  * ✅ *Sección 4.2:* **Ataques de ingeniería social**
+
+    * ✅ 4.2.1 Descripción General
+
+    * ✅ 4.2.2 Suplantación de identidad de correo electrónico (Phishing)
+
+    * ✅ 4.2.3 Suplantación de identidad de llamadas telefónicas (Vishing)
+
+    * ✅ 4.2.4 Suplantación de identidad del servicio de mensajes cortos (Smishing)
+
+    * ✅ 4.2.5 Abandono de USB (Baiting / Drop USB)
+
+    * ✅ 4.2.6 Ataques al bebedero (Watering Hole)
+
+    * ✅ 4.2.7 Práctica - Ataque de pivote
+
+    * ✅ 4.2.8 Práctica - Ataques de ingeniería social
+
+  * ✅ *Sección 4.3:* **Ataques físicos**
+
+    * ✅ 4.3.1 Descripción General
+
+    * ✅ 4.3.2 Intrusión por seguimiento (Tailgating / Piggybacking)
+
+    * ✅ 4.3.3 Búsqueda en la basura (Dumpster Diving)
+
+    * ✅ 4.3.4 Vigilancia por encima del hombro (Shoulder Surfing)
+
+    * ✅ 4.3.5 Clonación de credenciales (Badge Cloning / RFID Skimming)
+
+    * ✅ 4.3.6 Práctica - Ataques físicos
+
+  * ✅ *Sección 4.4:* **Herramientas de ingeniería social**
+
+    * ✅ 4.4.1 Descripción general
+
+    * ✅ 4.4.2 Kit de herramientas para ingenieros sociales (SET - Social-Engineer Toolkit)
+
+    * ✅ 4.4.3 Marco de explotación del navegador (BeEF - Browser Exploitation Framework)
+
+    * ✅ 4.4.4 Práctica - Marco de explotación del navegador
+
+    * ✅ 4.4.5 Herramientas de suplantación de identidad de llamadas (Caller ID Spoofing Tools)
+
+    * ✅ 4.4.6 Práctica - Herramientas de suplantación de identidad de llamadas
+
+    * ✅ 4.4.7 Práctica de laboratorio - Exploración del kit de herramientas del ingeniero social (SET)
+
+    * ✅ 4.4.8 Práctica de laboratorio - Uso del marco de explotación del navegador (BeEF)
+
+  * ✅ *Sección 4.5:* **Métodos de influencia**
+
+    * ✅ 4.5.1 Descripción general
+
+    * ✅ 4.5.2 Práctica - Métodos de influencia
+
+  * ✅ *Sección 4.6:* **Resumen**
+
+    * ✅ 4.6.1 ¿Qué aprendí en este módulo?
+
+    * ✅ 4.6.2 Preguntas de reflexión
+
+    * ✅ 4.6.3 Cuestionario - Ataques de ingeniería social
+
+  * ##### 🔹 Apuntes clave del Módulo 4:
+
+    * **Ingeniería Social:** Explotación del factor humano mediante manipulación psicológica, pretexto (Phishing, Vishing, Smishing, Baiting) y pivoteo en la red.
+
+    * **Métodos de Influencia:** Aplicación de principios psicológicos (autoridad, urgencia, escasez, prueba social, simpatía y reciprocidad) para persuadir a la víctima y evadir controles de seguridad.
+
+    * **Seguridad Física y Vector Presencial:**
+
+      * **Tailgating / Piggybacking:** Acceso no autorizado siguiendo de cerca a personal legítimo en áreas restringidas.
+
+      * **Dumpster Diving:** Recuperación de información sensible en desechos no triturados.
+
+      * **Shoulder Surfing:** Observación directa de credenciales o pines.
+
+      * **Clonación de Credenciales:** Abuso de frecuencias RFID/NFC para duplicar tarjetas de acceso.
+
+    * **Herramientas Específicas de Ingeniería Social:**
+
+      * **SET (Social-Engineer Toolkit):** Framework de código abierto orientado al desarrollo de ataques automatizados de ingeniería social (clonación de sitios web para Phishing, generación de payloads maliciosos, vectores de infección por USB/Email).
+
+      * **BeEF (Browser Exploitation Framework):** Herramienta de pruebas de penetración enfocada en explotar vulnerabilidades del lado del cliente enganchando (*hooking*) navegadores web objetivo para ejecutar comandos, phishing en tiempo real y exploración de red interna.
+
+      * **Caller ID Spoofing:** Técnicas y software para falsificar el número de origen en llamadas de voz (Vishing), manipulando la confianza del objetivo.
 
 * 🎯 **Módulo 3:** Recopilación de información y análisis de vulnerabilidades.
 
@@ -184,6 +202,6 @@ Mi ruta se divide en etapas estructuradas (siguiendo bases sólidas de redes, si
 
 ## 🚀 Próximos Pasos
 
-* ➡️ **Iniciar Módulo 5:** Explotación de redes cableadas e inalámbricas.
+* ➡️ **Continuar Módulo 5:** Explotación de redes cableadas e inalámbricas (Sección 5.2 en adelante).
 
 * Subir laboratorios prácticos realizados en Kali Linux al repositorio.
