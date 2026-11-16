@@ -36,7 +36,7 @@ Mi ruta se divide en etapas estructuradas (siguiendo bases sólidas de redes, si
 
 #### 🎯 Módulo 5: Explotación de redes cableadas e inalámbricas
 
-* ✅ *Sección 5.1:* **Explotación de vulnerabilidades basadas en la red**
+* 🔄 *Sección 5.1:* **Explotación de vulnerabilidades basadas en la red**
 
   * ✅ 5.1.1 Descripción General
 
@@ -46,11 +46,29 @@ Mi ruta se divide en etapas estructuradas (siguiendo bases sólidas de redes, si
 
   * ✅ 5.1.4 Práctica de laboratorio - Análisis en busca de vulnerabilidades de pymes con enum4linux
 
+  * ✅ 5.1.5 Envenenamiento de la caché de DNS
+
+  * ✅ 5.1.6 Práctica - Envenenamiento de la caché de DNS
+
+  * ✅ 5.1.7 Explotaciones de SNMP
+
+  * ✅ 5.1.8 Explotaciones de SMTP
+
+  * ✅ 5.1.9 Práctica - Comandos SMTP
+
 ##### 🔹 Apuntes clave del Módulo 5:
 
 * **Resolución de Nombres en Windows:** Abuso de protocolos de difusión local como LLMNR (*Link-Local Multicast Name Resolution*) y NBT-NS (*NetBIOS Name Service*) mediante envenenamiento de respuestas para interceptar hashes NTLMv2 en la red interna.
+
 * **Ataques a SMB (Server Message Block):** Enumeración de recursos compartidos sin autenticación (*Null Sessions*), explotación de configuraciones inseguras y captura/retransmisión de credenciales (*SMB Relay*).
+
 * **Enumeración con `enum4linux`:** Herramienta en Kali Linux utilizada para extraer información crítica de sistemas Windows y Samba (usuarios, grupos, políticas de contraseñas, recursos compartidos y OS) a través de protocolos SMB y RPC.
+
+* **Envenenamiento de Caché DNS (DNS Cache Poisoning):** Inserción de registros DNS falsificados en la caché de un servidor recursivo para redirigir el tráfico legítimo hacia servidores maliciosos sin que el usuario lo note.
+
+* **Explotaciones de SNMP (*Simple Network Management Protocol*):** Abuso de cadenas de comunidad por defecto (`public` / `private`) en versiones antiguas (SNMPv1/v2c) para extraer información de red, tablas de enrutamiento o modificar configuraciones de dispositivos.
+
+* **Explotaciones de SMTP (*Simple Mail Transfer Protocol*):** Abuso de servidores mal configurados (*Open Relays*) para envío de correo no autorizado/suplantado, y enumeración de usuarios válidos mediante comandos nativos como `VRFY`, `EXPN` y `RCPT TO`.
 
 #### 📂 Módulos Anteriores Completados
 
@@ -202,6 +220,6 @@ Mi ruta se divide en etapas estructuradas (siguiendo bases sólidas de redes, si
 
 ## 🚀 Próximos Pasos
 
-* ➡️ **Continuar Módulo 5:** Explotación de redes cableadas e inalámbricas (Sección 5.2 en adelante).
+* ➡️ **Continuar Módulo 5:** Explotación de redes cableadas e inalámbricas (Finalizar Sección 5.1 y avanzar a Sección 5.2).
 
 * Subir laboratorios prácticos realizados en Kali Linux al repositorio.
