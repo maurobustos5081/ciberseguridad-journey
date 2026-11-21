@@ -22,21 +22,21 @@ Mi ruta se divide en etapas estructuradas (siguiendo bases sólidas de redes, si
 
 #### 📌 Módulos Completados
 
-* ✅ **Introducción al curso**
+- ✅ **Introducción al curso**
 
-* ✅ **Módulo 1:** Introducción a la piratería ética y las pruebas de penetración.
+- ✅ **Módulo 1:** Introducción a la piratería ética y las pruebas de penetración.
 
-* ✅ **Módulo 2:** Planificación y alcance de una evaluación de prueba de penetración.
+- ✅ **Módulo 2:** Planificación y alcance de una evaluación de prueba de penetración.
 
-* ✅ **Módulo 3:** Recopilación de información y análisis de vulnerabilidades.
+- ✅ **Módulo 3:** Recopilación de información y análisis de vulnerabilidades.
 
-* ✅ **Módulo 4:** Ataques de ingeniería social.
+- ✅ **Módulo 4:** Ataques de ingeniería social.
 
-* 🔄 **Módulo 5:** Explotación de redes cableadas e inalámbricas *(En curso)*
+- 🔄 **Módulo 5:** Explotación de redes cableadas e inalámbricas *(En curso)*
 
 #### 🎯 Módulo 5: Explotación de redes cableadas e inalámbricas
 
-* 🔄 *Sección 5.1:* **Explotación de vulnerabilidades basadas en la red**
+- 🔄 *Sección 5.1:* **Explotación de vulnerabilidades basadas en la red** *(En curso)*
 
   * ✅ 5.1.1 Descripción General
 
@@ -44,7 +44,7 @@ Mi ruta se divide en etapas estructuradas (siguiendo bases sólidas de redes, si
 
   * ✅ 5.1.3 Práctica - Resolución de nombres de Windows y ataques de SMB
 
-  * ✅ 5.1.4 Práctica de laboratorio - Análisis en busca de vulnerabilidades de pymes con enum4linux
+  * ✅ 5.1.4 Práctica de laboratorio - Análisis en busca de vulnerabilidades de SMB con enum4linux
 
   * ✅ 5.1.5 Envenenamiento de la caché de DNS
 
@@ -56,125 +56,50 @@ Mi ruta se divide en etapas estructuradas (siguiendo bases sólidas de redes, si
 
   * ✅ 5.1.9 Práctica - Comandos SMTP
 
-##### 🔹 Apuntes clave del Módulo 5:
+  * ✅ 5.1.10 Explotaciones de FTP
 
-* **Resolución de Nombres en Windows:** Abuso de protocolos de difusión local como LLMNR (*Link-Local Multicast Name Resolution*) y NBT-NS (*NetBIOS Name Service*) mediante envenenamiento de respuestas para interceptar hashes NTLMv2 en la red interna.
+  * ✅ 5.1.11 Ataques de tipo Pass-the-Hash
 
-* **Ataques a SMB (Server Message Block):** Enumeración de recursos compartidos sin autenticación (*Null Sessions*), explotación de configuraciones inseguras y captura/retransmisión de credenciales (*SMB Relay*).
+  * ✅ 5.1.12 Ataques basados en Kerberos y LDAP
 
-* **Enumeración con `enum4linux`:** Herramienta en Kali Linux utilizada para extraer información crítica de sistemas Windows y Samba (usuarios, grupos, políticas de contraseñas, recursos compartidos y OS) a través de protocolos SMB y RPC.
+  * ✅ 5.1.13 Kerberoasting
 
-* **Envenenamiento de Caché DNS (DNS Cache Poisoning):** Inserción de registros DNS falsificados en la caché de un servidor recursivo para redirigir el tráfico legítimo hacia servidores maliciosos sin que el usuario lo note.
+  * ✅ 5.1.14 Ataques en ruta
 
-* **Explotaciones de SNMP (*Simple Network Management Protocol*):** Abuso de cadenas de comunidad por defecto (`public` / `private`) en versiones antiguas (SNMPv1/v2c) para extraer información de red, tablas de enrutamiento o modificar configuraciones de dispositivos.
+  * ✅ 5.1.15 Práctica - Kerberos, LDAP y ataques en ruta
 
-* **Explotaciones de SMTP (*Simple Mail Transfer Protocol*):** Abuso de servidores mal configurados (*Open Relays*) para envío de correo no autorizado/suplantado, y enumeración de usuarios válidos mediante comandos nativos como `VRFY`, `EXPN` y `RCPT TO`.
+  * ✅ 5.1.16 Práctica de laboratorio - Ataques en la ruta con Ettercap
+
+##### 🔹 Apuntes clave del Módulo 5 (Sección 5.1):
+
+- **Resolución de Nombres en Windows y SMB:** Explotación de protocolos de red local (LLMNR, NBT-NS) para capturar hashes NTLMv2 y enumeración de recursos compartidos, usuarios y políticas mediante `enum4linux` y SMB.
+- **DNS Cache Poisoning:** Inyección de registros falsos en la caché de un servidor DNS para redirigir el tráfico de los usuarios hacia servidores controlados por el atacante.
+- **Explotaciones de SNMP:** Abuso de cadenas de comunidad por defecto (`public` / `private`) en versiones SNMPv1/v2c para extraer información crítica de configuración y topología de dispositivos de red.
+- **Explotaciones de SMTP:** Enumeración de cuentas de usuario válidas en servidores de correo mediante comandos nativos como `VRFY`, `EXPN` y `RCPT TO`, además de pruebas de *Open Relay*.
+- **Explotaciones de FTP:** Intercepción de credenciales y archivos en texto plano (puertos 20/21), abuso de acceso anónimo (`anonymous`) mal configurado y ataques de fuerza bruta.
+- **Pass-the-Hash (PtH):** Técnica de movimiento lateral donde el atacante autentica sesiones utilizando directamente el hash NTLM capturado de un usuario sin necesidad de descifrar la contraseña en texto plano.
+- **Kerberos, LDAP y Kerberoasting:** Enumeración de Active Directory vía LDAP y extracción de tickets de servicio (TGS) cifrados con claves de cuentas de servicio para crackearlos offline (*Kerberoasting*).
+- **Ataques en ruta (MitM) con Ettercap:** Interceptación y manipulación de tráfico en redes locales mediante envenenamiento ARP (*ARP Spoofing*) utilizando Ettercap.
 
 #### 📂 Módulos Anteriores Completados
 
-* 🎯 **Módulo 4:** Ataques de ingeniería social
+- 🎯 **Módulo 4:** Ataques de ingeniería social.
 
-  * ✅ *Sección 4.0:* **Introducción**
+  * ✅ *Sección 4.0:* **Introducción** (4.0.1 - 4.0.2)
 
-    * ✅ 4.0.1 ¿Por qué debería tomar este módulo?
+  * ✅ *Sección 4.1:* **Pretextos para un acercamiento y suplantación de identidad** (4.1.1 - 4.1.2)
 
-    * ✅ 4.0.2 ¿Qué Aprenderé en este Módulo?
+  * ✅ *Sección 4.2:* **Ataques de ingeniería social** (Phishing, Vishing, Smishing, Baiting, Watering Hole, Pivote)
 
-  * ✅ *Sección 4.1:* **Pretextos para un acercamiento y suplantación de identidad**
+  * ✅ *Sección 4.3:* **Ataques físicos** (Tailgating, Dumpster Diving, Shoulder Surfing, Clonación RFID)
 
-    * ✅ 4.1.1 Descripción General
+  * ✅ *Sección 4.4:* **Herramientas de ingeniería social** (SET, BeEF, Caller ID Spoofing, Labs 4.4.7 y 4.4.8)
 
-    * ✅ 4.1.2 Práctica - Pretextos y suplantación
+  * ✅ *Sección 4.5:* **Métodos de influencia** (Autoridad, Escasez, Urgencia, Prueba social)
 
-  * ✅ *Sección 4.2:* **Ataques de ingeniería social**
+  * ✅ *Sección 4.6:* **Resumen** (4.6.1 - 4.6.3)
 
-    * ✅ 4.2.1 Descripción General
-
-    * ✅ 4.2.2 Suplantación de identidad de correo electrónico (Phishing)
-
-    * ✅ 4.2.3 Suplantación de identidad de llamadas telefónicas (Vishing)
-
-    * ✅ 4.2.4 Suplantación de identidad del servicio de mensajes cortos (Smishing)
-
-    * ✅ 4.2.5 Abandono de USB (Baiting / Drop USB)
-
-    * ✅ 4.2.6 Ataques al bebedero (Watering Hole)
-
-    * ✅ 4.2.7 Práctica - Ataque de pivote
-
-    * ✅ 4.2.8 Práctica - Ataques de ingeniería social
-
-  * ✅ *Sección 4.3:* **Ataques físicos**
-
-    * ✅ 4.3.1 Descripción General
-
-    * ✅ 4.3.2 Intrusión por seguimiento (Tailgating / Piggybacking)
-
-    * ✅ 4.3.3 Búsqueda en la basura (Dumpster Diving)
-
-    * ✅ 4.3.4 Vigilancia por encima del hombro (Shoulder Surfing)
-
-    * ✅ 4.3.5 Clonación de credenciales (Badge Cloning / RFID Skimming)
-
-    * ✅ 4.3.6 Práctica - Ataques físicos
-
-  * ✅ *Sección 4.4:* **Herramientas de ingeniería social**
-
-    * ✅ 4.4.1 Descripción general
-
-    * ✅ 4.4.2 Kit de herramientas para ingenieros sociales (SET - Social-Engineer Toolkit)
-
-    * ✅ 4.4.3 Marco de explotación del navegador (BeEF - Browser Exploitation Framework)
-
-    * ✅ 4.4.4 Práctica - Marco de explotación del navegador
-
-    * ✅ 4.4.5 Herramientas de suplantación de identidad de llamadas (Caller ID Spoofing Tools)
-
-    * ✅ 4.4.6 Práctica - Herramientas de suplantación de identidad de llamadas
-
-    * ✅ 4.4.7 Práctica de laboratorio - Exploración del kit de herramientas del ingeniero social (SET)
-
-    * ✅ 4.4.8 Práctica de laboratorio - Uso del marco de explotación del navegador (BeEF)
-
-  * ✅ *Sección 4.5:* **Métodos de influencia**
-
-    * ✅ 4.5.1 Descripción general
-
-    * ✅ 4.5.2 Práctica - Métodos de influencia
-
-  * ✅ *Sección 4.6:* **Resumen**
-
-    * ✅ 4.6.1 ¿Qué aprendí en este módulo?
-
-    * ✅ 4.6.2 Preguntas de reflexión
-
-    * ✅ 4.6.3 Cuestionario - Ataques de ingeniería social
-
-  * ##### 🔹 Apuntes clave del Módulo 4:
-
-    * **Ingeniería Social:** Explotación del factor humano mediante manipulación psicológica, pretexto (Phishing, Vishing, Smishing, Baiting) y pivoteo en la red.
-
-    * **Métodos de Influencia:** Aplicación de principios psicológicos (autoridad, urgencia, escasez, prueba social, simpatía y reciprocidad) para persuadir a la víctima y evadir controles de seguridad.
-
-    * **Seguridad Física y Vector Presencial:**
-
-      * **Tailgating / Piggybacking:** Acceso no autorizado siguiendo de cerca a personal legítimo en áreas restringidas.
-
-      * **Dumpster Diving:** Recuperación de información sensible en desechos no triturados.
-
-      * **Shoulder Surfing:** Observación directa de credenciales o pines.
-
-      * **Clonación de Credenciales:** Abuso de frecuencias RFID/NFC para duplicar tarjetas de acceso.
-
-    * **Herramientas Específicas de Ingeniería Social:**
-
-      * **SET (Social-Engineer Toolkit):** Framework de código abierto orientado al desarrollo de ataques automatizados de ingeniería social (clonación de sitios web para Phishing, generación de payloads maliciosos, vectores de infección por USB/Email).
-
-      * **BeEF (Browser Exploitation Framework):** Herramienta de pruebas de penetración enfocada en explotar vulnerabilidades del lado del cliente enganchando (*hooking*) navegadores web objetivo para ejecutar comandos, phishing en tiempo real y exploración de red interna.
-
-      * **Caller ID Spoofing:** Técnicas y software para falsificar el número de origen en llamadas de voz (Vishing), manipulando la confianza del objetivo.
-
-* 🎯 **Módulo 3:** Recopilación de información y análisis de vulnerabilidades.
+- 🎯 **Módulo 3:** Recopilación de información y análisis de vulnerabilidades.
 
   * ✅ *Sección 3.2.4:* Tipos de enumeración
 
@@ -220,6 +145,6 @@ Mi ruta se divide en etapas estructuradas (siguiendo bases sólidas de redes, si
 
 ## 🚀 Próximos Pasos
 
-* ➡️ **Continuar Módulo 5:** Explotación de redes cableadas e inalámbricas (Finalizar Sección 5.1 y avanzar a Sección 5.2).
+- ➡️ **Continuar Módulo 5:** Avanzar con las siguientes secciones de explotación en redes cableadas e inalámbricas.
 
-* Subir laboratorios prácticos realizados en Kali Linux al repositorio.
+- Subir laboratorios prácticos realizados en Kali Linux al repositorio.
